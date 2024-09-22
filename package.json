@@ -1,0 +1,35 @@
+{
+  "name": "fsc-part3",
+  "version": "1.0.0",
+  "description": "Fullstack Open course, part 3",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "ui:build": "@powershell npm run --prefix $env:FRONT_END_DIR build",
+    "ui:copy": "@powershell Remove-Item -Recurse -Force client -ErrorAction Ignore; Copy-Item -Path $env:FRONT_END_DIR/dist -Destination ./client -Recurse",
+    "ui": "npm run ui:build && npm run ui:copy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KennethUlloa/fsc-part3.git"
+  },
+  "keywords": [
+    "fullstack"
+  ],
+  "author": "Kenneth Ulloa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KennethUlloa/fsc-part3/issues"
+  },
+  "homepage": "https://github.com/KennethUlloa/fsc-part3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
