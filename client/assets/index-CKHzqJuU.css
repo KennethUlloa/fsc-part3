@@ -1,0 +1,1 @@
+.notification{--bg-color: #b6e4ed;--txt-color: #1a818f;padding:10px;border-radius:10px;background-color:var(--bg-color);font-size:1.2em;color:var(--txt-color)}.notification.error{--bg-color: rgb(244, 199, 199);--txt-color: rgb(156, 35, 35)}.notification.success{--bg-color: rgb(182, 238, 182);--txt-color: rgb(47, 120, 47)}
