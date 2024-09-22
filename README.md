@@ -11,3 +11,5 @@ Build frontend, for this command you'll need to provide FRONT_END_DIR environmen
 ```shell
 npm run ui
 ```
+Online access
+https://fsc-part3.onrender.com
